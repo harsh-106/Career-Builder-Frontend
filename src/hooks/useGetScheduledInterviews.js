@@ -10,7 +10,10 @@ const useGetScheduledInterviews = (userId) => {
     const fetchInterviews = async () => {
       try {
        
-        const res = await axios.get(`/api/v1/interviews/user/${userId}`);
+        const res = await axios.get(`https://career-builder-backend.onrender.com/api/v1/interviews/user/${userId}`, {
+          withCredentials: true,
+        });
+        
 
 
         console.log("📦 API Response:", res.data); 
