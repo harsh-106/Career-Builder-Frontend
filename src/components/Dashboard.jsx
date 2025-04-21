@@ -14,14 +14,14 @@ const Dashboard = () => {
     <div className="max-w-5xl mx-auto p-6">
       <h1 className="text-3xl font-bold mb-6">Schedule Interview</h1>
 
-      {/* Schedule New Interview */}
+     
       <div className="mb-10">
         <InterviewScheduler />
       </div>
 
-      {/* View Existing Interviews */}
+     
       <div>
-        {/* <InterviewList userId={user} /> */}
+        
       </div>
     </div>
     </div>

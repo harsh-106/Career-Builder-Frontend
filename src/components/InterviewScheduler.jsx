@@ -74,7 +74,7 @@ const InterviewScheduler = () => {
 
       setLoading(true);
       const response = await axios.post(
-        "http://localhost:8000/api/v1/interviews",
+        "https://career-builder-backend.onrender.com/api/v1/interviews",
         payload
       );
       toast.success("Interview scheduled successfully!");

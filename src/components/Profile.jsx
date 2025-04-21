@@ -78,15 +78,7 @@ const Profile = () => {
     <ul className="space-y-4">
       {scheduledInterviews.map((interview) => (
         <li key={interview._id} className="border p-4 rounded shadow-sm">
-            {/* <p>
-                    <strong>Job:</strong>{" "}
-                    <Link
-                      to={`/jobs/${interview?.jobId?._id}`}
-                      className="text-blue-500 underline"
-                    >
-                      {interview?.jobId?.title}
-                    </Link>
-                  </p> */}
+            
          <p><strong>Job:</strong> {interview?.jobId?.title}</p>
         <p><strong>Company:</strong> {interview?.employerId?.name}</p>
           <p><strong>Mode:</strong> {interview.mode}</p>

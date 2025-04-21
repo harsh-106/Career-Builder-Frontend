@@ -12,7 +12,7 @@ export default defineConfig({
   server: {
     proxy: {
       "/api": {
-        target: "http://localhost:8000", // 🔁 Your backend server URL
+        target: "https://career-builder-backend.onrender.com/", // 🔁 Your backend server URL
         changeOrigin: true,
         secure: false,
       },

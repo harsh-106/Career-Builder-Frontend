@@ -7,7 +7,7 @@ const InterviewList = ({ userId }) => {
 
   const fetchInterviews = async () => {
     try {
-      const res = await axios.get(`http://localhost:8000/api/v1/interviews/user/${userId}`);
+      const res = await axios.get(`https://career-builder-backend.onrender.com/api/v1/interviews/user/${userId}`);
       setInterviews(res.data);
     } catch (error) {
       console.error("Error fetching interviews:", error);
@@ -19,7 +19,7 @@ const InterviewList = ({ userId }) => {
   const handleCancel = async (interviewId) => {
     if (!window.confirm("Are you sure you want to cancel this interview?")) return;
     try {
-      await axios.put(`http://localhost:8000/api/v1/interviews/cancel/${interviewId}`);
+      await axios.put(`https://career-builder-backend.onrender.com/api/v1/interviews/cancel/${interviewId}`);
       fetchInterviews(); 
     } catch (error) {
       console.error("Failed to cancel interview:", error);
