@@ -64,6 +64,3 @@ Career builder is a job management platform designed to streamline the recruitme
 ### 1. Clone the Repository
 ### 2. npm install
 ### 3. npm run dev
-```bash
-git clone https://github.com/your-username/career-connect.git
-cd career-connect
